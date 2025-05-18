@@ -1,0 +1,342 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #FCBF49;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+
+}
+.header-container {
+    width: 100%;
+    max-width: 90%;
+    margin:10px;
+    padding:0;
+}
+
+
+/* Шапка */
+.header {
+    background: #1D6184;
+    color: white;
+    padding: px;
+    text-align: left;
+    min-width: 1440px;
+
+
+    
+}
+
+
+
+
+----
+/* Шапка сайта */
+.top-bar {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.top-bar .container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.contacts span {
+    margin-right: 20px;
+    font-family: 'Dela Gothic One', cursive;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.contacts i, .top-nav i {
+    margin-right: 5px;
+    color: #ffffff;
+}
+
+.top-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+    font-family: 'Dela Gothic One', cursive;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.top-nav a:hover {
+    color: #D62828;
+}
+
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Dela Gothic One', cursive;
+    font-weight: 900;
+    font-size: 32px;
+    color: #ffffff;
+    margin-right: 40px;
+
+}
+
+.main-nav {
+    display: flex;
+    flex-grow: 1;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: 600;
+    transition: color 0.3s;
+    font-family: 'Dela Gothic One', cursive;
+    font-weight: 100;
+}
+
+.main-nav a:hover {
+    color: #D62828;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    padding: 8px 15px;
+    border: 0px;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    background: #3580A7;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.search-box button {
+    background: #3580A7;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.hero {
+    height: 603px;
+    background: #003049;
+    color: white;
+    padding: 80px 0;
+    text-align: left;
+}
+
+.slogan {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 96px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 110%;
+    margin-top: -50px;
+    letter-spacing: 0px;
+    font-weight: 100;
+    position: absolute;
+}
+
+.main-title {
+    font-family: 'Dela Gothic One', cursive;
+    font-weight: 100;
+    font-size: 32px;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    position:absolute;
+    margin-top: 180px
+}
+
+.orange-line {
+    position: absolute;
+    width: 100%;
+    background-color: #F77F00;
+    height: 300px;
+    margin-top: 100px;
+    z-index: 0;
+    
+}
+
+.image-for-hero {
+    position: static;
+    margin-top: -81px;
+    height: 604px;
+    float: right;
+}
+
+h3 {
+    word-spacing: 5px;
+
+}
+
+.order-btn {
+    background-color: #D62828;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 38px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Dela Gothic One', cursive;
+    position: absolute;
+    margin-top: 300px;
+}
+
+.order-btn:hover {
+    background-color: #c12626;
+    transform: translateY(-3px);
+    font-size: 38px;
+}
+
+
+@media (max-width: 992px) {
+    .logo-nav {
+        flex-wrap: wrap;
+    }
+    
+    .main-nav {
+        order: 3;
+        width: 100%;
+        margin-top: 15px;
+        justify-content: center;
+    }
+    
+    .search-box {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar .container {
+        flex-direction: column;
+    }
+    
+    .contacts {
+        margin-bottom: 10px;
+    }
+    
+    .logo {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .main-nav {
+        display: none; /* Можно заменить на бургер-меню */
+    }
+    
+    .search-box {
+        width: 100%;
+    }
+    
+    .slogan {
+        font-size: 20px;
+        text-align: left;
+    }
+    
+    .main-title {
+        font-size: 32px;
+    }
+}
+
+
+
+
+.products {
+    padding: 60px 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300fr));
+    gap: 100px;
+    margin-top: -30px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: transform 0.3s;
+    padding: 20px;   
+    z-index: 1;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    display:block;
+}
+
+.product-card h3 {
+    font-family: 'Dela Gothic One', cursive;
+    font-weight: 100;
+    font-size: 30px;
+    margin-top: -40px;
+    color: #222;
+    text-align: left; 
+
+}
+
+
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 36px;
+    }
+    
+    .slogan {
+        font-size: 20px;
+    }
+    
+    .main-title {
+        font-size: 28px;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+    }
+}
