@@ -10,13 +10,19 @@ body {
     color: #333;
     line-height: 1.6;
     background-color: #FCBF49;
+    min-height: 100vh;
+    flex-shrink: 0;
 }
-
+.main-content {
+    flex: 1 0 auto;
+}
 
 .container {
     width: 100%;
     max-width: 90%;
     margin: 0 auto;
+    position: relative;
+
 
 }
 .header-container {
@@ -40,10 +46,6 @@ body {
 }
 
 
-
-
-----
-/* Шапка сайта */
 .top-bar {
     background-color: #222;
     color: #fff;
@@ -319,6 +321,8 @@ h3 {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    position:relative;
+    float: bottom;
 }
 
 
@@ -339,4 +343,164 @@ h3 {
         grid-template-columns: 1fr;
         margin-top: 0;
     }
+}
+
+
+.colors {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.color:nth-child(2) {
+    background-color: #ffffff;
+}
+
+.color:nth-child(3) {
+    background-color: #ffffff;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.product-subtitle {
+    font-size: 64px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    line-height: 110%;
+    padding: 30px;
+    padding-bottom: 60px;
+
+}
+
+.product-image {
+    margin: 20px 0;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.section-title {
+    font-size: 32px;
+    margin: 15px 0 10px;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.sizes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 30px;
+}
+
+.size {
+    background-color: #ffffff;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    width: 80px;
+    height: 50px;
+
+}
+
+.size:hover {
+    background-color: #E8F0FF;
+}
+
+.size.selected {
+    background-color: #FCBF49; 
+    color: rgb(33, 33, 33);
+    transform: scale(1.05); 
+    text-align: center;
+
+}
+
+.colors {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.color {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.color:hover {
+    transform: scale(1.1);
+}
+
+.color.white {
+    background-color: #ffffff;
+}
+
+.color.blue {
+    background-color: #275FB0;
+}
+
+.color.red {
+    background-color: #EA201D;
+}
+
+.color.active {
+    border: 3px solid #E8F0FF;
+    transform: scale(1.1);
+}
+
+.price {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0px;
+    color: #ffffff;
+    letter-spacing: 5px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+.main-price {
+    background-color: #D62828;
+    padding: 30px;
+}
+
+.product-description {
+    font-family: 'Dela Gothic One', cursive;
+    font-weight: 100;
+    position: relative;
+    width: 600px;
+
+    float: right;
+    background-color: #003049;
+    height: 100vh;
+}
+
+.main-product-title {
+    background-color: #F77F00;
+}
+
+.image-trainers {
+    position: relative;
+    float: left;    
 }
