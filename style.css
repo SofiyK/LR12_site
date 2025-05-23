@@ -317,7 +317,10 @@ h3 {
 
 }
 
-
+.product-card p{
+    font-family: 'Dela Gothic One';
+    font-weight: 100;
+}
 
 .footer {
     background-color: #222;
