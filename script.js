@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
             selectedColor = this.getAttribute('data-color');
             
             // Меняем изображение
-            mainImage.src = `images/${selectedColor}.jpg`;
+            mainImage.src = `images/${selectedColor}.png`;
         });
     });
     
