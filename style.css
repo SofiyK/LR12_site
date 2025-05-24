@@ -14,9 +14,8 @@ body {
     flex-shrink: 0;
 }
 .main-content {
-    flex: 1 0 auto;
     display: flex;
-    height: 100vh;
+    flex-wrap: wrap;
     position: relative;
 }
 
@@ -431,7 +430,7 @@ h3 {
     cursor: pointer;
     width: 80px;
     height: 50px;
-
+    color: #222;
 }
 
 .size:hover {
@@ -484,7 +483,7 @@ h3 {
 }
 
 .price {
-    font-size: 48px;
+    font-size: 60px;
     font-weight: 100;
     margin: 0px;
     color: #ffffff;
@@ -503,10 +502,11 @@ h3 {
     font-weight: 100;
     position: relative;
     width: 600px;
-    overflow-y: auto;
     float: right;
     background-color: #003049;
-    height: 100vh;
+    height: auto;
+    overflow: visible;
+
 }
 
 .main-product-title {
@@ -517,7 +517,7 @@ h3 {
     position: relative;
     float: left;
     flex: 1;
-    height: 100%;
+    height: auto;
     overflow: hidden;
 
 }
