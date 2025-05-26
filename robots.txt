@@ -1,0 +1,20 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /login/
+Disallow: /register/
+Disallow: /account/
+Disallow: /search/
+Disallow: /*?*
+Disallow: /*filter*
+Disallow: /*sort*
+
+Allow: /$
+Allow: /products/
+Allow: /categories/
+Allow: /brands/
+Allow: /about/
+Allow: /contact/
+
+Sitemap: https://courtgrip.example.com/sitemap.xml
