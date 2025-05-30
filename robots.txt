@@ -1,20 +1,17 @@
-User-agent: *
-Disallow: /admin/
-Disallow: /cart/
-Disallow: /checkout/
-Disallow: /login/
-Disallow: /register/
-Disallow: /account/
-Disallow: /search/
-Disallow: /*?*
-Disallow: /*filter*
-Disallow: /*sort*
+User-agent: Yandex
+Disallow: /login
+Disallow: /register
+Crawl-delay: 7
 
-Allow: /$
-Allow: /products/
-Allow: /categories/
-Allow: /brands/
-Allow: /about/
-Allow: /contact/
+User-agent: Googlebot
+Disallow: /login
+Disallow: /register
+Crawl-delay: 7
+
+User-agent: *
+Disallow: /login
+Disallow: /register
+Crawl-delay: 7
+
 
 Sitemap: https://courtgrip.example.com/sitemap.xml
