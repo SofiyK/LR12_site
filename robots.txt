@@ -14,4 +14,4 @@ Disallow: /register
 Crawl-delay: 7
 
 
-Sitemap: https://courtgrip.example.com/sitemap.xml
+Sitemap: https://sofiyk.github.io/courtgrid
